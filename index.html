@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Q&A</title>
+  <link rel="icon" size="32x32" href="favicon.ico">
+</head>
+
+<body bgcolor="#C8FFD4">
+  <h1 align="center">HTML Interview Q&A</h1>
+  <h1 align="center">Day-3</h1>
+  <hr size="5" color="black">
+  <!--Question 1-->
+  <h2>1. Write a code to insert an image.</h2>
+  <font size="4">
+    <p>
+    <pre>
+      &lt;img src="gojo-modified.png" alt="img"&gt;
+    </pre>
+    <br>
+    <strong>Output:</strong>
+    <br><br>
+    <img src="gojo-modified.png" alt="img" width="200px" height="200px">
+    </p>
+  </font>
+<!--Question 2-->
+  <h2>2. Write a code to create a form containing input fields like Name, Age, Email, Contact number & a Submit button.</h2>
+  <font size="4">
+    <p>
+      Below is the code to create a html form.
+    <pre>
+      &lt;form class="" action="index.html" method="get"&gt;
+      &lt;label for="name"&gt;Enter Your Name&lt;/label&gt;
+      &lt;input type="text" name="name" value="" placeholder="Enter your Name"&gt;
+      &lt;br&gt;&lt;br&gt;
+      &lt;label for="age"&gt;Enter Your Age&lt;/label&gt;
+      &lt;input type="number" name="number" value="" placeholder="Enter your Age"&gt;
+      &lt;br&gt;&lt;br&gt;
+      &lt;label for="email"&gt;Enter Your Email&lt;/label&gt;
+      &lt;input type="email" name="email" value="" placeholder="Enter Email Address"&gt;
+      &lt;br>&lt;br&gt;
+      &lt;label for="contact"&gt;Enter Contact Number&lt;/label&gt;
+      &lt;input type="number" name="contact" value="" placeholder="Enter contact number"&gt;
+      &lt;br&gt;&lt;br&gt;
+      &lt;input type="submit" name="submit" value=""&gt;
+      &lt;/form&gt;
+      </pre>
+
+    <strong>Output:</strong>
+    <br><br>
+    <table border="1">
+      <tr>
+        <td>  <form class="" action="index.html" method="get">
+            <label for="name">Enter Your Name: </label>
+            <input type="text" name="name" value="" placeholder="Enter your Name">
+            <br>
+            <br>
+            <label for="age">Enter Your Age: </label>
+            <input type="number" name="number" value="" placeholder="Enter your Age">
+            <br><br>
+            <label for="email">Enter Your Email: </label>
+            <input type="email" name="email" value="" placeholder="Enter Email Address">
+            <br><br>
+            <label for="contact">Enter Contact Number: </label>
+            <input type="number" name="contact" value="" placeholder="Enter contact number">
+            <br><br>
+            <input type="submit" name="" value="submit">
+          </form></td>
+      </tr>
+    </table>
+
+    </p>
+  </font>
+  <!--Question 3-->
+  <h2>3. Create a table and explain how to achieve coolspan.</h2>
+  <Font size="4">
+    ▶ To achieve colspan we have use the <strong>"colspan"</strong> attribute in the "tr" elementof the table.<br>
+      Code is shown below on how to achieve "colspan"
+    <pre>
+      &lt;table border="1" align="center" width="1000" height="100"&gt;
+        &lt;thead&gt;
+          &lt;th>Course&lt;/th&gt;
+          &lt;th colspan="2"&gt;Contact Number&lt;/th&gt;
+          &lt;th&gt;Date of Commencement&lt;/th&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+          &lt;tr&gt;
+            &lt;td&gt;Elevation Academy&lt;/td&gt;
+            &lt;td&gt;1236547890&lt;/td&gt;
+            &lt;td&gt;2nd October 2022&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;Elevation Academy&lt;/td&gt;
+            &lt;td&gt;1236547890&lt;/td&gt;
+            &lt;td&gt;2nd October 2022&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;Elevation Academy&lt;/td&gt;
+            &lt;td&gt;1236547890&lt;/td&gt;
+            &lt;td&gt;2nd October 2022&lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/table&gt;
+    </pre>
+    <strong>Output:</strong>
+    <br>
+    <table border="1" align="center" width="600" height="100">
+      <thead>
+        <th>Course</th>
+        <th colspan="2">Contact Number</th>
+        <th>Date of Commencement</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Elevation Academy</td>
+          <td>1236547890</td>
+          <td>2nd October 2022</td>
+        </tr>
+        <tr>
+          <td>Elevation Academy</td>
+          <td>1236547890</td>
+          <td>2nd October 2022</td>
+        </tr>
+        <tr>
+          <td>Elevation Academy</td>
+          <td>1236547890</td>
+          <td>2nd October 2022</td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+  </Font>
+  <br>
+  <!--Question 4-->
+  <h2>4. Create a Radio button(MERN, MEAN : COURSE) and Checkbox (HTML, CSS, React, Node: Technology) and explain the difference between the two.</h2>
+  <font size="4">
+    <p>
+      Checkboxes and radio buttons are elements for making selections.<br> Checkboxes allow the user to choose items from a fixed number of alternatives,<br> while radio buttons allow the user to choose exactly one item from a list of several predefined alternatives.
+    </p>
+    <p>
+      Code for Radio Button:
+      </p>
+      <p>
+        <pre>
+          &lt;form class="" action="index.html" method="get"&gt;
+            &lt;label for="course">Course:&lt;/label&gt;
+            &lt;input type="radio" name="course" value=""&gt;
+            &lt;label for="mern">MERN&lt;/label&gt;
+            &lt;input type="radio" name="course" value=""&gt;
+            &lt;label for="mean">MEAN&lt;/label&gt;
+          &lt;/form&gt;
+        </pre>
+      </p>
+      <strong>Output:</strong>
+      <br><br>
+        <form class="" action="index.html" method="get">
+          <label for="course"><strong>Course:</strong></label><br>
+          <input type="radio" name="course" value="">
+          <label for="mern">MERN</label>
+          <br>
+          <input type="radio" name="course" value="">
+          <label for="mean">MEAN</label>
+        </form>
+      <br>
+<p>
+  Code for Checkbox:
+</p>
+<p>
+  <pre>
+    form class="" action="index.html" method="get"&gt;
+      &lt;label for="tech"&gt;Technology&lt;/label&gt
+      &lt;input type="checkbox" name="" value="html"&gt;
+      <&lt;label for="html"&gt;HTML&lt;/label&gt;
+      &lt;input type="checkbox" name="" value="css"&gt;
+      &lt;label for="css"&gt;CSS&lt;/label&gt;
+      &lt;input type="checkbox" name="" value="react"&gt;
+      &lt;label for="react"&gt;ReactJS&lt;/label&gt;
+      &lt;input type="checkbox" name="" value="node"&gt;
+      &lt;label for="node"&gt;NodeJS&lt;/label&gt;
+    &lt;/form&gt;
+  </pre>
+</p>
+<p>
+  <strong>Output:</strong>
+</p>
+<form class="" action="index.html" method="get">
+  <label for="tech"><strong>Technology</strong></label><br>
+  <input type="checkbox" name="" value="html">
+  <label for="html">HTML</label><br>
+  <input type="checkbox" name="" value="css">
+  <label for="css">CSS</label><br>
+  <input type="checkbox" name="" value="react">
+  <label for="react">ReactJS</label><br>
+  <input type="checkbox" name="" value="node">
+  <label for="node">NodeJS</label>
+
+</form>
+  </font>
+
+
+</body>
+
+</html>
